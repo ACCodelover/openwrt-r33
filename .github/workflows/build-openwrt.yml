@@ -46,7 +46,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-        sudo rm /etc/apt/sources.list
+        # sudo rm /etc/apt/sources.list
         sudo gem install apt-spy2
         sudo apt-spy2 check
         sudo apt-spy2 fix --commit
